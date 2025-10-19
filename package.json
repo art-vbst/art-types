@@ -1,0 +1,19 @@
+{
+  "name": "types",
+  "version": "1.0.0",
+  "type": "module",
+  "files": ["dist"],
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/art-vbst/art-types.git"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
