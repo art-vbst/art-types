@@ -2,15 +2,24 @@
   "name": "@art-vbst/art-types",
   "version": "1.0.0",
   "type": "module",
-  "files": ["dist"],
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
   "scripts": {
     "build": "tsc",
-    "prepare": "npm run build"
+    "publish:patch": "npm version patch && npm publish",
+    "publish:minor": "npm version minor && npm publish",
+    "publish:major": "npm version major && npm publish",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/art-vbst/art-types.git"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "license": "ISC",
   "devDependencies": {
