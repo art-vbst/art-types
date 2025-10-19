@@ -3,8 +3,15 @@
   "version": "1.0.1",
   "type": "module",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./stub/index.js"
+    }
+  },
   "files": [
-    "dist"
+    "dist",
+    "stub"
   ],
   "sideEffects": false,
   "scripts": {
