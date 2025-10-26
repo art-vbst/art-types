@@ -1,4 +1,4 @@
-import type { Payment } from './payments';
+import type { Payment } from './payment';
 
 export type OrderStatus =
   | 'pending'
