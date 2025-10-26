@@ -8,7 +8,7 @@ export type OrderStatus =
   | 'failed'
   | 'canceled';
 
-export interface Order {
+export type Order = {
   id: string;
   stripeSessionId?: string;
   status: OrderStatus;
@@ -16,9 +16,9 @@ export interface Order {
   paymentRequirement: PaymentRequirement;
   payments: Payment[];
   createdAt: Date;
-}
+};
 
-export interface ShippingDetail {
+export type ShippingDetail = {
   id: string;
   orderId: string;
   email: string;
@@ -29,13 +29,13 @@ export interface ShippingDetail {
   state: string;
   postal: string;
   country: string;
-}
+};
 
-export interface PaymentRequirement {
+export type PaymentRequirement = {
   id: string;
   orderId: string;
   subtotalCents: number;
   shippingCents: number;
   totalCents: number;
   currency: string;
-}
+};

@@ -15,8 +15,8 @@
   ],
   "sideEffects": false,
   "scripts": {
-    "format": "biome format --write .",
-    "format:unsafe": "biome format --write --unsafe .",
+    "format": "biome format --write ./src",
+    "format:unsafe": "biome format --write --unsafe ./src",
     "lint": "biome lint .",
     "clean": "rm -rf dist",
     "build": "npm run clean && tsc",

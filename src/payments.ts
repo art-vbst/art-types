@@ -1,6 +1,6 @@
 export type PaymentStatus = 'success' | 'failed' | 'refunded';
 
-export interface Payment {
+export type Payment = {
   id: string;
   orderId: string;
   stripePaymentIntentId: string;
@@ -9,4 +9,4 @@ export interface Payment {
   currency: string;
   createdAt: Date;
   paidAt: Date;
-}
+};
