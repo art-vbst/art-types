@@ -1,4 +1,4 @@
-import { Image } from "./image";
+import type { Image } from './image';
 
 export type Artwork = {
   id: string;
@@ -20,25 +20,25 @@ export type Artwork = {
 };
 
 export enum ArtworkStatus {
-  Available = "available",
-  Pending = "pending",
-  Sold = "sold",
-  NotForSale = "not_for_sale",
-  Unavailable = "unavailable",
-  ComingSoon = "coming_soon",
+  Available = 'available',
+  Pending = 'pending',
+  Sold = 'sold',
+  NotForSale = 'not_for_sale',
+  Unavailable = 'unavailable',
+  ComingSoon = 'coming_soon',
 }
 
 export enum ArtworkMedium {
-  OilPanel = "oil_panel",
-  AcrylicPanel = "acrylic_panel",
-  OilMdf = "oil_mdf",
-  OilPaper = "oil_paper",
-  Unknown = "unknown",
+  OilPanel = 'oil_panel',
+  AcrylicPanel = 'acrylic_panel',
+  OilMdf = 'oil_mdf',
+  OilPaper = 'oil_paper',
+  Unknown = 'unknown',
 }
 
 export enum ArtworkCategory {
-  Figure = "figure",
-  Landscape = "landscape",
-  MultiFigure = "multi_figure",
-  Other = "other",
+  Figure = 'figure',
+  Landscape = 'landscape',
+  MultiFigure = 'multi_figure',
+  Other = 'other',
 }
