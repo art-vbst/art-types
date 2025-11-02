@@ -9,7 +9,7 @@ export type Artwork = {
   height_inches: number;
   price_cents: number;
   paper: boolean | null;
-  sort_order: number | null;
+  sort_order: number;
   sold_at: string | null;
   status: ArtworkStatus;
   medium: ArtworkMedium;

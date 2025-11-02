@@ -3,6 +3,7 @@ export type Image = {
   artwork_id: string;
   is_main_image: boolean;
   image_url: string;
+  object_name: string;
   image_width: number | null;
   image_height: number | null;
   created_at: string;

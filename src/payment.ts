@@ -2,11 +2,11 @@ export type PaymentStatus = 'success' | 'failed' | 'refunded';
 
 export type Payment = {
   id: string;
-  orderId: string;
-  stripePaymentIntentId: string;
+  order_id: string;
+  stripe_payment_intent_id: string;
   status: PaymentStatus;
-  totalCents: number;
+  total_cents: number;
   currency: string;
-  createdAt: Date;
-  paidAt: Date;
+  created_at: string;
+  paid_at: string;
 };
