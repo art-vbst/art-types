@@ -8,6 +8,12 @@ export type OrderStatus =
   | 'failed'
   | 'canceled';
 
+export type OrderPublic = {
+  id: string;
+  status: OrderStatus;
+  created_at: string;
+};
+
 export type Order = {
   id: string;
   stripe_session_id?: string;
