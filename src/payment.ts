@@ -1,5 +1,3 @@
-export type PaymentStatus = 'success' | 'failed' | 'refunded';
-
 export type Payment = {
   id: string;
   order_id: string;
@@ -10,3 +8,9 @@ export type Payment = {
   created_at: string;
   paid_at: string;
 };
+
+export enum PaymentStatus {
+  Success = 'success',
+  Failed = 'failed',
+  Refunded = 'refunded',
+}

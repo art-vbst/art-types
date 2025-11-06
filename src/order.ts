@@ -1,13 +1,4 @@
 import type { Payment } from './payment';
-
-export type OrderStatus =
-  | 'pending'
-  | 'processing'
-  | 'shipped'
-  | 'completed'
-  | 'failed'
-  | 'canceled';
-
 export type OrderPublic = {
   id: string;
   status: OrderStatus;
@@ -45,3 +36,12 @@ export type PaymentRequirement = {
   total_cents: number;
   currency: string;
 };
+
+export enum OrderStatus {
+  Pending = 'pending',
+  Processing = 'processing',
+  Shipped = 'shipped',
+  Completed = 'completed',
+  Failed = 'failed',
+  Canceled = 'canceled',
+}
