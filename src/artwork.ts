@@ -8,7 +8,7 @@ export type Artwork = {
   width_inches: number;
   height_inches: number;
   price_cents: number;
-  paper: boolean | null;
+  paper: boolean;
   sort_order: number;
   sold_at: string | null;
   status: ArtworkStatus;
@@ -21,7 +21,6 @@ export type Artwork = {
 
 export enum ArtworkStatus {
   Available = 'available',
-  Pending = 'pending',
   Sold = 'sold',
   NotForSale = 'not_for_sale',
   Unavailable = 'unavailable',

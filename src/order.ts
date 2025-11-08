@@ -7,12 +7,12 @@ export type OrderPublic = {
 
 export type Order = {
   id: string;
-  stripe_session_id?: string;
   status: OrderStatus;
-  shipping_detail: ShippingDetail;
-  payment_requirement: PaymentRequirement;
-  payments: Payment[];
+  stripe_session_id: string | null;
   created_at: string;
+  shipping_detail?: ShippingDetail;
+  payment_requirement?: PaymentRequirement;
+  payments?: Payment[];
 };
 
 export type ShippingDetail = {

@@ -6,7 +6,7 @@ export type Payment = {
   total_cents: number;
   currency: string;
   created_at: string;
-  paid_at: string;
+  paid_at: string | null;
 };
 
 export enum PaymentStatus {
