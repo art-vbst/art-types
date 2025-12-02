@@ -8,6 +8,7 @@ export type Artwork = {
   width_inches: number;
   height_inches: number;
   price_cents: number;
+  description: string | null;
   paper: boolean;
   sort_order: number;
   sold_at: string | null;
@@ -28,10 +29,14 @@ export enum ArtworkStatus {
 }
 
 export enum ArtworkMedium {
-  OilPanel = 'oil_panel',
-  AcrylicPanel = 'acrylic_panel',
-  OilMdf = 'oil_mdf',
-  OilPaper = 'oil_paper',
+  OilOnPanel = 'oil_on_panel',
+  AcrylicOnPanel = 'acrylic_on_panel',
+  OilOnMdf = 'oil_on_mdf',
+  OilOnOilPaper = 'oil_on_oil_paper',
+  ClaySculpture = 'clay_sculpture',
+  PlasterSculpture = 'plaster_sculpture',
+  InkOnPaper = 'ink_on_paper',
+  MixedMediaOnPaper = 'mixed_media_on_paper',
   Unknown = 'unknown',
 }
 
